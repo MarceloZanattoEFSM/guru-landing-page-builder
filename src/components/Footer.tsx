@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className="relative bg-brand-secondary-bg/90 backdrop-blur-md">
       {/* Main Footer */}
       <div className="container-custom pt-16 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Description */}
           <div className="md:pr-8">
             <a href="/" className="inline-block mb-6">
@@ -20,33 +20,6 @@ const Footer: React.FC = () => {
             <p className="text-brand-secondary-text mb-6">
               Para alcançar o sucesso em seus estudos ou empreendimentos educacionais, a <strong>Você Guru</strong> é a sua aliada perfeita. Descubra a simplicidade que revoluciona.
             </p>
-            
-            {/* Contact Information */}
-            <div className="space-y-4">
-              <h4 className="text-lg font-semibold mb-3">Contato</h4>
-              <ul className="space-y-3">
-                <li className="flex items-center">
-                  <Phone className="h-5 w-5 mr-3 text-brand-primary flex-shrink-0" />
-                  <a 
-                    href="https://wa.me/5511999504573" 
-                    className="text-brand-secondary-text hover:text-white transition-colors"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    (11) 99950-4573
-                  </a>
-                </li>
-                <li className="flex items-center">
-                  <Mail className="h-5 w-5 mr-3 text-brand-primary flex-shrink-0" />
-                  <a 
-                    href="mailto:contato@voce.guru" 
-                    className="text-brand-secondary-text hover:text-white transition-colors"
-                  >
-                    contato@voce.guru
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
           
           {/* Quick Links */}
@@ -76,6 +49,33 @@ const Footer: React.FC = () => {
               <li>
                 <a href="#faq" className="text-brand-secondary-text hover:text-white transition-colors">
                   FAQ
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Information */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Contato</h4>
+            <ul className="space-y-3">
+              <li className="flex items-center">
+                <Phone className="h-5 w-5 mr-3 text-brand-primary flex-shrink-0" />
+                <a 
+                  href="https://wa.me/5511999504573" 
+                  className="text-brand-secondary-text hover:text-white transition-colors"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  (11) 99950-4573
+                </a>
+              </li>
+              <li className="flex items-center">
+                <Mail className="h-5 w-5 mr-3 text-brand-primary flex-shrink-0" />
+                <a 
+                  href="mailto:contato@voce.guru" 
+                  className="text-brand-secondary-text hover:text-white transition-colors"
+                >
+                  contato@voce.guru
                 </a>
               </li>
             </ul>
