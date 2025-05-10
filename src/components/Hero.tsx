@@ -50,15 +50,6 @@ const Hero: React.FC = () => {
                 Comece Gratuitamente
               </a>
             </Button>
-            
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white text-lg px-8 py-6"
-              onClick={scrollToFeatures}
-            >
-              Saiba Mais
-            </Button>
           </div>
           
           <p className="hero-item text-brand-secondary-text mt-4">

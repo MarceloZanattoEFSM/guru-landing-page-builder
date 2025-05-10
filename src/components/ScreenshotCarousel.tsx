@@ -6,24 +6,45 @@ import { Button } from '@/components/ui/button';
 const screenshots = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-    alt: "Painel de controle da plataforma Você Guru",
-    title: "Painel de Controle Intuitivo",
-    description: "Gerencie seus cursos e alunos em uma interface simples e poderosa."
+    src: "/lovable-uploads/dac1e479-ea7d-4d24-999f-35b43db144a3.png",
+    alt: "Gerenciamento de turmas na plataforma Você Guru",
+    title: "Gestão Completa de Turmas",
+    description: "Controle o acesso aos módulos e garanta que cada aluno visualize apenas os conteúdos autorizados."
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-    alt: "Player de vídeo responsivo da Você Guru",
-    title: "Player de Vídeo Responsivo",
-    description: "Seus alunos terão a melhor experiência em qualquer dispositivo."
+    src: "/lovable-uploads/de445f14-3fb6-476f-9c46-8c3a2f63c408.png",
+    alt: "Página de curso na plataforma Você Guru",
+    title: "Player de Vídeo Profissional",
+    description: "Interface moderna e intuitiva para consumir conteúdo educacional de qualidade."
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-    alt: "Sistema de gestão de alunos da Você Guru",
-    title: "Gestão de Alunos",
-    description: "Acompanhe o progresso e engajamento dos seus alunos em tempo real."
+    src: "/lovable-uploads/bf035ccb-dc2a-46ce-84a4-cab0613b50dc.png",
+    alt: "Dashboard de aluno na Você Guru",
+    title: "Dashboard Completo",
+    description: "Acompanhe seu progresso e tenha acesso a todos os seus cursos em um só lugar."
+  },
+  {
+    id: 4,
+    src: "/lovable-uploads/d0f61d84-2647-43b0-b5b5-c884f23e1f4c.png",
+    alt: "Lista de cursos disponíveis na Você Guru",
+    title: "Acesso aos Seus Cursos",
+    description: "Visualize todos os seus cursos e continue de onde parou com apenas um clique."
+  },
+  {
+    id: 5,
+    src: "/lovable-uploads/3da79c27-e4d8-4fb8-811f-914ec949b753.png",
+    alt: "Marketplace de cursos na Você Guru",
+    title: "Marketplace Integrado",
+    description: "Descubra novos cursos ou venda seus conhecimentos na nossa plataforma integrada."
+  },
+  {
+    id: 6,
+    src: "/lovable-uploads/834776bc-bd3f-4675-af16-3b18f15b0597.png",
+    alt: "Painel de gestão de curso na Você Guru",
+    title: "Gestão Completa de Cursos",
+    description: "Crie e gerencie módulos, acompanhe alunos e visualize estatísticas de desempenho."
   }
 ];
 
