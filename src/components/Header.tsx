@@ -34,11 +34,11 @@ const Header: React.FC = () => {
       <div className="container-custom flex items-center justify-between">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-white">
-              <span className="text-brand-primary">Você</span>
-              <span className="text-brand-secondary">.</span>
-              <span className="text-white">Guru</span>
-            </span>
+            <img 
+              src="/lovable-uploads/34705e0a-05ec-4a02-9b5b-a8c0bdca72e6.png" 
+              alt="Você Guru Logo" 
+              className="h-10" 
+            />
           </a>
         </div>
         
