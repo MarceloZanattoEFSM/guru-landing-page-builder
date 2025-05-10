@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -6,17 +5,17 @@ import { Button } from '@/components/ui/button';
 const screenshots = [
   {
     id: 1,
-    src: "/lovable-uploads/dac1e479-ea7d-4d24-999f-35b43db144a3.png",
-    alt: "Gerenciamento de turmas na plataforma Você Guru",
-    title: "Gestão Completa de Turmas",
-    description: "Controle o acesso aos módulos e garanta que cada aluno visualize apenas os conteúdos autorizados."
-  },
-  {
-    id: 2,
     src: "/lovable-uploads/de445f14-3fb6-476f-9c46-8c3a2f63c408.png",
     alt: "Página de curso na plataforma Você Guru",
     title: "Player de Vídeo Profissional",
     description: "Interface moderna e intuitiva para consumir conteúdo educacional de qualidade."
+  },
+  {
+    id: 2,
+    src: "/lovable-uploads/dac1e479-ea7d-4d24-999f-35b43db144a3.png",
+    alt: "Gerenciamento de turmas na plataforma Você Guru",
+    title: "Gestão Completa de Turmas",
+    description: "Controle o acesso aos módulos e garanta que cada aluno visualize apenas os conteúdos autorizados."
   },
   {
     id: 3,

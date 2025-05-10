@@ -58,8 +58,8 @@ const ForCreators: React.FC = () => {
               <div className="absolute inset-0 bg-black/30 rounded-2xl backdrop-blur-sm"></div>
               <div className="relative rounded-xl overflow-hidden border border-white/20">
                 <img 
-                  src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                  alt="Criador de curso trabalhando em um laptop" 
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
+                  alt="Palestrante jovem apresentando" 
                   className="w-full object-cover rounded-xl"
                   loading="lazy"
                 />
