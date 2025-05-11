@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
       <div className="container-custom relative z-10">
         <div className="flex flex-col items-center text-center space-y-8 max-w-4xl mx-auto">
           <h1 className="hero-item text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-white to-brand-secondary-text bg-clip-text text-transparent">
-            Seja o Guru do Seu Futuro com a <span className="text-brand-primary">Você</span><span className="text-brand-secondary">.</span><span className="text-white">Guru</span>
+            Seja o Guru do Futuro com a <span className="text-brand-primary">Você</span><span className="text-brand-secondary">.</span><span className="text-white">Guru</span>
           </h1>
           
           <h2 className="hero-item text-xl md:text-2xl lg:text-3xl font-semibold text-brand-secondary-text">

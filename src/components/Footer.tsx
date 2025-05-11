@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
       <div className="bg-brand-primary/20 py-4">
         <div className="container-custom text-center text-sm text-brand-secondary-text">
           <p>
-            Todos os direitos reservados - Você Guru - Desenvolvido por{' '}
+            Todos os direitos reservados - Você Guru - Site desenvolvido por{' '}
             <a 
               href="https://eufacoseu.site/?utm_source=cliente&utm_medium=landing_page&utm_campaign=Você Guru&utm_id=referencia" 
               className="text-brand-secondary hover:text-white transition-colors"
