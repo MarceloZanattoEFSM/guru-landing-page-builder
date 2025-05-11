@@ -1,12 +1,9 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -15,30 +12,16 @@ const Header: React.FC = () => {
         setIsScrolled(false);
       }
     };
-
     window.addEventListener('scroll', handleScroll);
-    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'py-3 bg-brand-secondary-bg/95 backdrop-blur-sm shadow-lg' 
-          : 'py-5 bg-transparent'
-      }`}
-    >
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'py-3 bg-brand-secondary-bg/95 backdrop-blur-sm shadow-lg' : 'py-5 bg-transparent'}`}>
       <div className="container-custom flex items-center justify-between">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/34705e0a-05ec-4a02-9b5b-a8c0bdca72e6.png" 
-              alt="Você Guru Logo" 
-              className="h-10" 
-            />
+            <img src="/lovable-uploads/34705e0a-05ec-4a02-9b5b-a8c0bdca72e6.png" alt="Você Guru Logo" className="h-15" />
           </a>
         </div>
         
@@ -59,10 +42,7 @@ const Header: React.FC = () => {
           <a href="#faq" className="text-brand-secondary-text hover:text-white transition-colors">
             FAQ
           </a>
-          <Button 
-            asChild
-            className="bg-brand-primary text-white hover:bg-brand-primary/90"
-          >
+          <Button asChild className="bg-brand-primary text-white hover:bg-brand-primary/90">
             <a href="https://painel.voce.guru/dashboard" target="_blank" rel="noopener noreferrer">
               Comece Agora
             </a>
@@ -70,67 +50,36 @@ const Header: React.FC = () => {
         </nav>
         
         {/* Mobile Menu Toggle */}
-        <button 
-          className="md:hidden p-2 text-white" 
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
-        >
+        <button className="md:hidden p-2 text-white" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
       
       {/* Mobile Menu Dropdown */}
-      {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-brand-secondary-bg/95 backdrop-blur-sm shadow-lg pb-5 animate-fade-in">
+      {isMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 bg-brand-secondary-bg/95 backdrop-blur-sm shadow-lg pb-5 animate-fade-in">
           <div className="container-custom flex flex-col space-y-4 pt-2">
-            <a 
-              href="#features" 
-              className="py-3 px-4 hover:bg-brand-primary/20 rounded-md text-brand-secondary-text hover:text-white transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <a href="#features" className="py-3 px-4 hover:bg-brand-primary/20 rounded-md text-brand-secondary-text hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
               Benefícios
             </a>
-            <a 
-              href="#for-creators" 
-              className="py-3 px-4 hover:bg-brand-primary/20 rounded-md text-brand-secondary-text hover:text-white transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <a href="#for-creators" className="py-3 px-4 hover:bg-brand-primary/20 rounded-md text-brand-secondary-text hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
               Para Criadores
             </a>
-            <a 
-              href="#for-students" 
-              className="py-3 px-4 hover:bg-brand-primary/20 rounded-md text-brand-secondary-text hover:text-white transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <a href="#for-students" className="py-3 px-4 hover:bg-brand-primary/20 rounded-md text-brand-secondary-text hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
               Para Alunos
             </a>
-            <a 
-              href="#testimonials" 
-              className="py-3 px-4 hover:bg-brand-primary/20 rounded-md text-brand-secondary-text hover:text-white transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <a href="#testimonials" className="py-3 px-4 hover:bg-brand-primary/20 rounded-md text-brand-secondary-text hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
               Depoimentos
             </a>
-            <a 
-              href="#faq" 
-              className="py-3 px-4 hover:bg-brand-primary/20 rounded-md text-brand-secondary-text hover:text-white transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <a href="#faq" className="py-3 px-4 hover:bg-brand-primary/20 rounded-md text-brand-secondary-text hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
               FAQ
             </a>
-            <Button 
-              asChild
-              className="bg-brand-primary text-white hover:bg-brand-primary/90 mx-4"
-            >
+            <Button asChild className="bg-brand-primary text-white hover:bg-brand-primary/90 mx-4">
               <a href="https://painel.voce.guru/dashboard" target="_blank" rel="noopener noreferrer">
                 Comece Agora
               </a>
             </Button>
           </div>
-        </div>
-      )}
-    </header>
-  );
+        </div>}
+    </header>;
 };
-
 export default Header;
