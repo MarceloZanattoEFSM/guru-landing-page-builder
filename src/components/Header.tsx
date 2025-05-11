@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -43,7 +44,7 @@ const Header: React.FC = () => {
             FAQ
           </a>
           <Button asChild className="bg-brand-primary text-white hover:bg-brand-primary/90">
-            <a href="https://painel.voce.guru/dashboard" target="_blank" rel="noopener noreferrer">
+            <a href="https://painel.voce.guru/dashboard">
               Comece Agora
             </a>
           </Button>
@@ -74,7 +75,7 @@ const Header: React.FC = () => {
               FAQ
             </a>
             <Button asChild className="bg-brand-primary text-white hover:bg-brand-primary/90 mx-4">
-              <a href="https://painel.voce.guru/dashboard" target="_blank" rel="noopener noreferrer">
+              <a href="https://painel.voce.guru/dashboard">
                 Comece Agora
               </a>
             </Button>

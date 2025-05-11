@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
               size="lg" 
               className="bg-brand-primary text-white hover:bg-brand-primary/90 text-lg px-8 py-6"
             >
-              <a href="https://painel.voce.guru/dashboard" target="_blank" rel="noopener noreferrer">
+              <a href="https://painel.voce.guru/dashboard">
                 Comece Gratuitamente
               </a>
             </Button>
@@ -58,13 +58,15 @@ const Hero: React.FC = () => {
         </div>
       </div>
       
-      <button 
-        onClick={scrollToFeatures}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white bg-transparent rounded-full p-3 animate-bounce"
-        aria-label="Rolar para baixo"
-      >
-        <ArrowDown size={28} />
-      </button>
+      <div className="absolute bottom-10 left-0 right-0 flex justify-center">
+        <button 
+          onClick={scrollToFeatures}
+          className="bg-transparent rounded-full p-3 animate-bounce"
+          aria-label="Rolar para baixo"
+        >
+          <ArrowDown size={28} className="text-white" />
+        </button>
+      </div>
     </section>
   );
 };
