@@ -87,7 +87,7 @@ const Faq: React.FC = () => {
   const filteredItems = faqItems.filter(item => item.category === activeCategory);
 
   return (
-    <section id="faq" className="py-20 bg-brand-secondary-bg relative overflow-hidden">
+    <section id="faq" className="py-12 bg-brand-secondary-bg relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-brand-tertiary blur-[100px]"></div>
       </div>
