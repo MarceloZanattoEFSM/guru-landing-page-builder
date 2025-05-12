@@ -9,6 +9,7 @@ import ComparisonSection from '@/components/ComparisonSection';
 import Testimonials from '@/components/Testimonials';
 import ScreenshotCarousel from '@/components/ScreenshotCarousel';
 import Faq from '@/components/Faq';
+import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
@@ -25,6 +26,7 @@ const Index = () => {
         <ComparisonSection />
         <Testimonials />
         <Faq />
+        <CtaSection />
       </main>
       <Footer />
       <WhatsAppButton />
